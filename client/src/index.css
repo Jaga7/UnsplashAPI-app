@@ -1,4 +1,13 @@
-body {
+/* #root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+#root {
   background-color: #dedede;
   display: grid;
   grid-template-columns: auto auto;
@@ -32,7 +41,7 @@ body {
 }
 
 @media only screen and (min-width: 1140px) {
-  body {
+  #root {
     grid-template-columns: auto auto auto;
   }
 }
@@ -57,12 +66,12 @@ body {
 }
 
 .outerTile > .authorAndDate,
-.outerTile > .outerDescriptionDiv {
+.outerTile > .descriptionDiv {
   display: none;
   background-color: white;
 }
 
-.outerTile > .outerDescriptionDiv {
+.outerTile > .descriptionDiv {
   border-top-right-radius: 10%;
   border-top-left-radius: 10%;
 }
@@ -73,11 +82,11 @@ body {
 }
 
 @media only screen and (max-width: 760px) {
-  body {
+  #root {
     grid-template-columns: auto;
   }
   .outerTile > .authorAndDate,
-  .outerTile > .outerDescriptionDiv {
+  .outerTile > .descriptionDiv {
     display: initial;
     display: flex;
     flex-direction: column;
