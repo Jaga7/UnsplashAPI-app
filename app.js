@@ -1,5 +1,3 @@
-const unsplashApiKey = "APIKEY"
-
 const createOuterTile = (authorAndDate, descriptionDiv, tile) => {
   const outerAuthorAndDate = authorAndDate.cloneNode(true)
   const outerDescriptionDiv = descriptionDiv.cloneNode(true)
